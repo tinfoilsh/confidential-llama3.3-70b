@@ -1,6 +1,6 @@
 cvm-version: 0.0.14
 ovmf-version: 0.0.2
-cpus: 16
+cpus: 8
 memory: 32768
 
 metrics: 10.0.2.2:6379
