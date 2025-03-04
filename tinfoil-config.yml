@@ -10,7 +10,8 @@ models:
     mpk: 7272277b9c507fc5d328cad4e14e8058e873eb5738857d9719dcdbf0873c3001-42520420352
 
 shim:
-  domain: llama3-3-70b.model.tinfoil.sh
+  domains:
+    - llama3-3-70b.model.tinfoil.sh
   listen-port: 443
   upstream-port: 11434
   paths:
