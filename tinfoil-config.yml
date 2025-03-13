@@ -1,9 +1,7 @@
-cvm-version: 0.0.15
+cvm-version: 0.0.17
 ovmf-version: 0.0.2
 cpus: 8
 memory: 32768
-
-metrics: 10.0.2.2:6379
 
 models:
   - id: llama3.3:70b
@@ -14,9 +12,7 @@ shim:
     - llama3-3-70b.model.tinfoil.sh
   listen-port: 443
   upstream-port: 11434
+  key-validation-server: http://10.0.2.2:8087/validate
+  llm-metrics-server: http://10.0.2.2:8087/collect
   paths:
     - /v1/chat/completions
-    - /v1/embeddings
-    - /api/chat
-    - /api/generate
-    - /api/embed
